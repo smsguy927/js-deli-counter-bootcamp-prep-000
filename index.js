@@ -35,4 +35,20 @@ name in your function though, it's just an example of a variable that might be
 passed to it. If there is nobody in line, it should return `"The line is
 currently empty."`
   */
+  let message = 'The line is currently';
+ if (line.length > 0) {
+   line += ': ';
+   let i = 0;
+   while(i < line.length) {
+     i++;
+     if(i === line.length) {
+       message = message + i + '. ' + line[i];
+     } else {
+       message = message + i + '. ' + line[i] + ', ';
+     }
+   }
+ } else {
+   message += ' empty.';
+ }
+ return message;
 }
