@@ -37,7 +37,7 @@ currently empty."`
   */
   let message = 'The line is currently';
  if (line.length > 0) {
-   line += ': ';
+   message += ': ';
    let i = 0;
    while(i < line.length) {
      i++;
