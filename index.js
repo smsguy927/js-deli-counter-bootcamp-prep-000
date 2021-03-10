@@ -40,12 +40,13 @@ currently empty."`
    message += ': ';
    let i = 0;
    while(i < line.length) {
-     i++;
+     
      if(i === line.length) {
-       message = message + i + '. ' + line[i];
+       message = message + (i + 1) + '. ' + line[i];
      } else {
-       message = message + i + '. ' + line[i] + ', ';
+       message = message + (i + 1) + '. ' + line[i] + ', ';
      }
+     i++;
    }
  } else {
    message += ' empty.';
